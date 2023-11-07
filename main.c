@@ -67,6 +67,7 @@ int	main(int ac, char **av, char **env)
 	t_data	*ptr;
 
 	ptr = malloc(sizeof(t_data));
+	(void)ac;
 	init_data(ptr, av);
 	while ((ptr->read = getline(&ptr->line, &ptr->len, stdin)) != -1)
 	{
